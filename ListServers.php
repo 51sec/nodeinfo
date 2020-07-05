@@ -52,7 +52,7 @@
 			}
 			
 ?>
-<tr>
+<tr> 
 	<td><?php echo $value->name; ?></td>
 	<td><?php echo $value->load_percent; ?>%</td>
 	<td><?php echo $value->load_average; ?></td>
