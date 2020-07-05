@@ -18,7 +18,7 @@
 
 	$api = new Nodequery;
 	//设置Nodequery API
-	$data = $api->ListServer("xxxxxx");
+	$data = $api->ListServer("xra8VDjviWL4lE5yZdOBwgxvdnrvDSSLyoyJmJQ0OSKYXU1R");
 	$data = json_decode($data);
 	$status = $data->status;
 	//$data = json_decode($data->data[0]);
@@ -44,7 +44,7 @@
 			//可用性
 			if($value->status == 'active') {
 				$css = 'layui-btn-normal';
-				$status = '正常';
+				$status = 'OK';
 			}
 			else {
 				$css = 'layui-btn-danger';
