@@ -13,8 +13,6 @@ NodeInfo uses NodeQuery API to get server monitoring data and show it in a page 
 
 ### Demo
 * [https://api.xiaoz.org/status/](https://api.xiaoz.org/status/)
-*[https://mynodequery.herokuapp.com/(https://mynodequery.herokuapp.com/)
-
-
+* [https://mynodequery.herokuapp.com/]
 ![](https://imgurl.org/upload/1803/13791efd32f067ec.png)
 
