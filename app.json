@@ -1,0 +1,15 @@
+{
+    "name": "NodeInfo",
+    "description": "NodeInfo StatusPage",
+    "keywords": [
+        "UptimeRobot",
+        "StatusPage",
+        "Uptime",
+        "Robot"
+    ],
+    "website": "https://github.com/51sec/nodeinfo",
+    "repository": "https://github.com/51sec/nodeinfo",
+    "env": {
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-php"
+    }
+}
