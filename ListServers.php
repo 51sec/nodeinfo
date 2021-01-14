@@ -17,31 +17,31 @@
 	}
 
 	$api = new Nodequery;
-	//设置Nodequery API
+	//Set up Nodequery API
 	$data = $api->ListServer("xra8VDjviWL4lE5yZdOBwgxvdnrvDSSLyoyJmJQ0OSKYXU1R");
 	$data = json_decode($data);
 	$status = $data->status;
 	//$data = json_decode($data->data[0]);
 	//var_dump($data->data[0]);
-	//请求数据成功
+	//Request Data Successful
 	if($status == 'OK') {
 		foreach( $data->data[0] as $value )
 		{
-			//更新时间
+			//Uptime
 			$uptime = date('Y-m-d H:i:s',$value->update_time);
 			//echo $uptime;
-			//内存
+			//RAM
 			$ram_total = round($value->ram_total / 1024 / 1024);
 			$ram_use = round($value->ram_usage / 1024 / 1024);
 			$ram_percent = @round($value->ram_usage / $value->ram_total * 100);
-			//磁盘
+			//Disk
 			$disk_total = round($value->disk_total / 1024 / 1024 / 1024);
 			$disk_usage = sprintf("%.1f", $value->disk_usage / 1024 / 1024 / 1024); 
 			$disk_percent = @round($value->disk_usage / $value->disk_total * 100);
-			//网络
+			//Network
 			$network_rx = round($value->current_rx / 1024 / 180);
 			$network_tx	= round($value->current_tx / 1024 / 180);
-			//可用性
+			//Availability
 			if($value->status == 'active') {
 				$css = 'layui-btn-normal';
 				$status = 'OK';
