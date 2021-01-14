@@ -18,7 +18,7 @@
 
 	$api = new Nodequery;
 	//Set up Nodequery API
-	$data = $api->ListServer("xra8VDjviWL4lE5yZdOBwgxvdnrvDSSLyoyJmJQ0OSKYXU1R");
+	$data = $api->ListServer("xra8VDjviWL4lE5yZ11111111111111111111");
 	$data = json_decode($data);
 	$status = $data->status;
 	//$data = json_decode($data->data[0]);
